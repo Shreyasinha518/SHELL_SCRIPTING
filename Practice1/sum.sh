@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Enter the number"
-read n
+
+read -p "Enter the number " n
 sum=0
-while (( n > 0 ))
+while [ $n -gt 0 ]
 do
 	d=$((n % 10))
 	sum=$((sum + d))
